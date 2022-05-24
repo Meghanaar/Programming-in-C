@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+int addition(int a);
+int main()
+{
+	int num,sum;
+	printf("Enter a number ");
+	scanf("%d",&num);
+	sum=addition(num);
+	printf("The sum of the digits is %d",sum);
+	return 0;
+}
+
+int addition(int num)
+{
+	if(num>0)
+		return (num%10 + addition(num/10));
+	else
+		return 0;
+}
