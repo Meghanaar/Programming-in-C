@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main()
+{
+	int i,j,steps;
+	printf("Enter the number of steps needed ");
+	scanf("%d",&steps);
+	for(i=1;i<=steps;++i)
+	{
+		for(j=1;j<=i;++j)
+		{	printf("01");	}
+		printf("\n");
+	}
+	return 0;
+ }
