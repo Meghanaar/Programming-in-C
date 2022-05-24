@@ -3,7 +3,7 @@
 int prime(int a,int b);
 int main()
 {
-	int num,sum;
+	int num;
 	printf("Enter a number ");
 	scanf("%d",&num);
 	if(prime(num,num/2) == 0)
